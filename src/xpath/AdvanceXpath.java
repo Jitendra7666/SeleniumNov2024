@@ -5,9 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.sql.Driver;
-
-public class MajorXpath
+public class AdvanceXpath
 {
     public static void main(String[] args) throws InterruptedException {
        WebDriver driver = new ChromeDriver();
@@ -26,12 +24,21 @@ public class MajorXpath
        driver.findElement(By.xpath("//a[text()='Add Customer']")).click();
        Thread.sleep(2000);
 
-
         driver.findElement(By.xpath("//a[text()='View Customers']")).click();
         Thread.sleep(4000);
+      //  driver.findElement(By.xpath("//tr[td[text()='adarsh']]/td/a[contains(@class ,'edit')]")).click();
+        //Thread.sleep(4000);
 
-        driver.findElement(By.xpath("//tr[td[text()='adarsh']]/td/a[contains(@class ,'edit')]")).click();
-
+       // driver.findElement(By.xpath("//tr[td[text()='Veena']]//td/a[contains(@class,'delete')]")).click();
         Thread.sleep(4000);
+
+        WebElement Chekbx = driver.findElement(By.xpath("//tr[td[text()='Veena']]//input[@id='check_box']"));
+        Chekbx.click();
+
+        Thread.sleep(2000);
+
+        Chekbx.click();
     }
+
+
 }
