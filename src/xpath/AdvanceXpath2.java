@@ -18,6 +18,16 @@ public class AdvanceXpath2
        driver.findElement(By.xpath("//button[contains(@class,'primary')]")).click();
        Thread.sleep(2000);
 
+      driver.findElement(By.xpath("//span[normalize-space()='Clients']")).click();
+      Thread.sleep(2000);
+      driver.findElement(By.xpath("//a[normalize-space()='View Clients']")).click();
+      // driver.findElement(By.xpath("//tr[td/a[text()='ABC Limited']]//li[2]")).click();
+      Thread.sleep(2000);
+
+
+
+
+
 
 
 
