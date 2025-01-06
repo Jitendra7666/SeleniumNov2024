@@ -21,24 +21,34 @@ public class AdvanceXpath
 
        driver.findElement(By.name("submit")).click();
 
+       driver.findElement(By.xpath("//a[normalize-space()=\"Add Sales\"]")).click();
+       Thread.sleep(2000);
+       driver.findElement(By.xpath("//a[normalize-space()='View Sales']")).click();
+       Thread.sleep(2000);
+       driver.findElement(By.xpath("//tr[td[text()=' jacob']]//a[contains(@class,'edit')]")).click();
+
+            //Clicks on Add Customer
        driver.findElement(By.xpath("//a[text()='Add Customer']")).click();
        Thread.sleep(2000);
 
-        driver.findElement(By.xpath("//a[text()='View Customers']")).click();
-        Thread.sleep(4000);
-      //  driver.findElement(By.xpath("//tr[td[text()='adarsh']]/td/a[contains(@class ,'edit')]")).click();
-        //Thread.sleep(4000);
+            //Clicks on View Customers
+       driver.findElement(By.xpath("//a[text()='View Customers']")).click();
+       Thread.sleep(4000);
 
-       // driver.findElement(By.xpath("//tr[td[text()='Veena']]//td/a[contains(@class,'delete')]")).click();
-        Thread.sleep(4000);
+            //Clicks on Edit button
+       /*driver.findElement(By.xpath("//tr[td[text()='adarsh']]/td/a[contains(@class ,'edit')]")).click();
+       Thread.sleep(4000);*/
 
-        WebElement Chekbx = driver.findElement(By.xpath("//tr[td[text()='Veena']]//input[@id='check_box']"));
-        Chekbx.click();
+            //Clicks on Delete button
+      /* driver.findElement(By.xpath("//tr[td[text()='Veena']]//td/a[contains(@class,'delete')]")).click();
+       Thread.sleep(4000);*/
 
-        Thread.sleep(2000);
+            //Tick on Checkbox
+       WebElement Chekbx = driver.findElement(By.xpath("//tr[td[text()='Veena']]//input[@id='check_box']"));
+       Chekbx.click();
 
-        Chekbx.click();
+       Thread.sleep(2000);
+            //UnTick on Checkbox
+       Chekbx.click();
     }
-
-
 }
