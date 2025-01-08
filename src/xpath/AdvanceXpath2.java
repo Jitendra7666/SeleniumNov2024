@@ -22,7 +22,15 @@ public class AdvanceXpath2
       Thread.sleep(2000);
       driver.findElement(By.xpath("//a[normalize-space()='View Clients']")).click();
       // driver.findElement(By.xpath("//tr[td/a[text()='ABC Limited']]//li[2]")).click();
+
+        ////a/i[contains(@class,'cog')]
       Thread.sleep(2000);
+      driver.findElement(By.xpath("//tr[td/a[text()='ABC Limited']]//a/i[contains(@class,'cog')]")).click();
+      Thread.sleep(2000);
+      driver.findElement(By.xpath("//tr[td/a[text()='ABC Limited']]//li[2]")).click();
+      driver.findElement(By.id("client_surname")).sendKeys("Patel");
+      driver.findElement(By.xpath("//button[@id=\"btn-submit\"]")).click();
+
 
 
 
