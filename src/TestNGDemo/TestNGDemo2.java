@@ -1,23 +1,24 @@
-package JunitDemo;
-
-import org.junit.*;
+package TestNGDemo;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 
-public class JunitLogin3
+public class TestNGDemo2
 {
-    static WebDriver driver;    // ====================Declares the driver as globally
-    @BeforeClass   // Method below this annotation will run before first test method of class
-    public static void OpenBrowser()
+    WebDriver driver;
+    @BeforeMethod   // Method below this annotation will run before every test method
+    public void OpenBrowser()
     {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
     }
-    @AfterClass  // Method below this annotation will run before last test method of class
-    public static void CloseBrowser()
+    @AfterMethod  // Method below this annotation will run after every test method
+    public void CloseBrowser()
     {
         driver.close();
     }
