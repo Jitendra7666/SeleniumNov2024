@@ -1,6 +1,7 @@
 package TestNGDemo.Demo1;
 
-import org.junit.Test;
+
+import org.testng.annotations.Test;
 
 public class ClassThree
 {
