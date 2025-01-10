@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Socialsites
 {
     WebDriver driver;
-
+// Sharad
     @BeforeClass
     public void OpenBrowser()
     {
