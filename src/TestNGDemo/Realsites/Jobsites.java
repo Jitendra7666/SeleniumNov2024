@@ -1,39 +1,36 @@
 package TestNGDemo.Realsites;
 
 
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-public class Socialsites
+
+public class Jobsites
 {
     WebDriver driver;
+
    @BeforeClass
-    public void OpenBrowser()
-    {
+   public void openbrowser()
+   {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-    }
-    @AfterClass
-    public void closebroswer()
+   }
+   @AfterClass
+   public void closebrowser()
+   {
+       driver.close();
+   }
+    @Test
+    public void naukari()
     {
-        driver.close();
+        driver.get("https://www.naukri.com/");
     }
     @Test
-    public void instagram()
+    public void monster()
     {
-        driver.get("https://www.instagram.com");
+        driver.get("https://www.foundit.in/");
     }
-    @Test
-    public void facebook()
-    {
-        driver.get("https://www.facebook.com");
-    }
-    @Test
-    public void linkedin()
-    {
-        driver.get("https://www.linkedin.com");
-    }
+
 }

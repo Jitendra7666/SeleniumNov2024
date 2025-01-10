@@ -1,0 +1,25 @@
+<suite name = "Project name">
+    <test name="jobsites">
+        <classes>
+            <class name="TestNGDemo.Realsites.Socialsites"/>;
+            <class name ="TestNGDemo.Realsites.Studysits"/>;
+        </classes>
+
+    </test>
+    <test name="Socialmediasites">
+        <classes>
+            <class name="TestNGDemo.Realsites.Jobsites"/>;
+        </classes>
+
+
+    </test>
+
+
+
+
+
+
+
+
+
+</suite>
