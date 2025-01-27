@@ -1,0 +1,8 @@
+<suite name = "Comapny">
+    <test name = "test1">
+        <Classes>
+            <class name = "TestNGDemo.Company.Companyit"></class>
+        </Classes>
+    </test>
+</suite>
+

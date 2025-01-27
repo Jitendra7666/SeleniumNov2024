@@ -1,0 +1,16 @@
+<suite name = "DemoTestNG">
+    <test name = "Scenario1">
+        <classes>
+                 <class name ="TestNGDemo.Realsites2.Marriagesites"></class>
+        </classes>
+    </test>
+    <test name = "Scenario2">
+        <classes>
+                <class name = "TestNGDemo.Realsites2.clothsites"></class>
+        </classes>
+    </test>
+
+
+</suite>
+
+

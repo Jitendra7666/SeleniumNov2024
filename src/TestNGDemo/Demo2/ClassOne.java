@@ -1,20 +1,12 @@
-package TestNGDemo.Demo1;
+package TestNGDemo.Demo2;
 
 
-import org.testng.annotations.*;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
 
 public class ClassOne
 {
-    @BeforeSuite
-    public void BeforeMysuite()
-    {
-        System.out.println("BeforeMysuiteClassOne");
-    }
-    @AfterSuite
-    public void AfterMysuite()
-    {
-        System.out.println("AfterMysuiteClassOne");
-    }
     @Test
     public void ClassOneTest1()
     {
