@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class ClassTwo
 {
-    @Test (enabled = false)
+    @Test
     public void ClassTwoTest1()
     {
         System.out.println("ClassTwoTest1");
