@@ -5,6 +5,8 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
+import javax.swing.*;
+
 public class ClassOne
 {
     @Test
@@ -12,7 +14,7 @@ public class ClassOne
     {
         System.out.println("ClassOneTest1");
     }
-    @Test
+    @Test (groups = "email")
     public void ClassOneTest2()
     {
         System.out.println("ClassOneTest2");
